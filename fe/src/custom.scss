@@ -1,0 +1,57 @@
+.link-item {
+  color: #242426;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+@media screen and (max-width:992px) {
+  li {
+    &.nav-link {
+      color: #242426;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 15px 0 !important;
+     
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    background-color: rgb(154, 156, 156);
+  }
+  .link-item {
+    color: #242426;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    padding: 0.5rem 0;
+    background: none;
+    border: 0;
+    &:hover {
+      color: #000;
+    }
+    &.active {
+      color: #000;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      height: 2px;
+      background-color: #009970;
+      visibility: hidden;
+      transition: width 0.3s ease-in-out;
+    }
+    &:hover::before,
+    &.active::before {
+      visibility: visible;
+      width: 100%;
+    }
+  }
+}
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
