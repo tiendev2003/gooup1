@@ -3,7 +3,7 @@
 
 <!-- tạo bảng với 2 cột là ưu điểm và nhược điểm của Express framework -->
 
-## Tạo bảng với 2 cấu này là ưu điểm và như được Express framework
+## Ưu điểm và như được Express framework
 
 | Ưu Điểm |  Nhược điểm  | 
 |:--------|:--------|
